@@ -1,0 +1,138 @@
+.GlassMor {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.GlassMor:hover {
+    box-shadow: #000000 0 0 5px;
+}
+
+span {
+    color: #000000cb;
+}
+
+.LargeCard {
+    background-color: rgba(255, 255, 255, .1);
+    width: 700px;
+    height: auto;
+    padding: 30px;
+    border-radius: 1rem;
+}
+button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, .001);
+    color: white;
+    border:black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+button:hover{
+    box-shadow: 0 0 10px;
+}
+.MediumCard {
+    background-color: rgba(255, 255, 255, .001);
+    width: 110px;
+    height: auto;
+    padding: 40px 30px 40px 30px;
+    border-radius: 1rem;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #000000cb;
+    border-radius: 8px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float:none;
+}
+
+.oldCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topnav {
+    overflow: hidden;
+    /* 设置导航栏宽度为100% */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.topnav span {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    color: #000000cb;
+}
+
+.InfShadow {
+    box-shadow: #000000 0 0 5px;
+}
+
+img.Avater {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000cb;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #000000a8;
+}
+
+.LeftStackPanel {
+    float: left;
+}
+
+.RightStackPanel {
+    float: right;
+}
+@font-face {
+    font-family: "DS-DIGI";
+    src: url("Resource/Font/DS-DIGI-1.ttf");
+}
+.Font-NumberFont {
+    font-size: larger;
+    font-family: "DS-DIGI";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+

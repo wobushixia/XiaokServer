@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仪表盘</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <style>
+        body {
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: rgba(255, 255, 255, .001);
+            color: white;
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .sidebar h2:hover {
+            color: #39c5bb;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.308);
+            color: #39c5bb;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body background="../../../picture/Building.png">
+    <div class="sidebar GlassMor InfShadow">
+        <h2 onclick="window.location.href='../../dashboard.html'" style="cursor: pointer;">XiaokServer</h2>
+    </div>
+    <div class="content">
+        <div class="GlassMor LargeCard oldCenter">
+            <h3>Tips</h3>
+            <hr>
+            <p>您可以点击右上角"XiaokServer"进行返回</p>
+        </div>
+    </div>
+
+    <script src="../../../js.js"></script>
+</body>
+
+</html>

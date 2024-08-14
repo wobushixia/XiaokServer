@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仪表盘</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: rgba(255, 255, 255, .001);
+            color: white;
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            width: 100%;
+            top:0;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.308);
+            color: #39c5bb;
+        }
+
+        .widget {
+            background-color: rgba(255, 255, 255, .001);
+            border: 1px solid #cccccc1f;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .widget:hover {
+            box-shadow: 0px 0px 10px black;
+        }
+    </style>
+</head>
+
+<body background="../picture/Building.png">
+    <div class="sidebar GlassMor InfShadow">
+        <h2>XiaokServer</h2>
+        <hr>
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="htmlmanager/Blog/index.html">博客</a></li>
+            <li><a href="htmlmanager/About/index.html">关于</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="widget GlassMor" id="ToGroup" onclick="ToURL('htmlmanager/widget/Tips.html')">
+            <h2>网页提示(新人必看)</h2>
+            <p>操作提示</p>
+        </div>
+        <div class="widget GlassMor"id="ToRule" onclick="ToURL('htmlmanager/widget/XSrule.html')">
+            <h2>XiaokServer规则</h2>
+            <p>新人点进来</p>
+        </div>
+        <div class="widget GlassMor" id="ToGroup" onclick="ToURL('htmlmanager/widget/QQ-Group.html')">
+            <h2>XiaokServerQQ群</h2>
+            <p>QQ-Group-code:640289126</p>
+        </div>
+    </div>
+
+    <script>
+        function ToURL(URL){
+            window.location.href=URL;
+        }
+    </script>
+</body>
+
+</html>
